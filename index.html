@@ -46,7 +46,7 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         nav a {
-            margin: 0 12px;
+            margin: 0 10px; /* Reduced margin for new link */
             font-weight: 500;
         }
         
@@ -79,15 +79,16 @@
     <header>
         <center>
             <h1>Yigit Turkmen</h1>
-            <p>PhD Applicant | Machine Learning & Signal Processing</p>
+            <p>PhD Applicant</p>
         </center>
         
         <nav>
             <a href="#about">About</a> |
             <a href="#publications">Publications</a> |
             <a href="#research">Research</a> |
+            <a href="#experience">Industry</a> |
             <a href="#education">Education</a> |
-            <a href="CV_Yigit_Turkmen.pdf" target="_blank">View CV (PDF)</a>
+            <a href="CV_Yigit_Turkmen.pdf" target="_blank">View CV</a>
         </nav>
     </header>
 
@@ -98,9 +99,14 @@
                 Welcome to my personal page. I am a final-year B.S. student in 
                 <strong>Electrical and Electronics Engineering</strong> at <strong>Bilkent University</strong>.
             </p>
+            
             <p>
-                My research interests are in machine learning, reinforcement learning, and statistical signal processing,
-                particularly their application in networked systems and time-series analysis. 
+                My research is focused on using **mathematics to understand complex systems** at a fundamental level. 
+                I am interested in developing **rigorous analytical frameworks**—using tools from optimization, 
+                probability, and queueing theory—to model, analyze, and design machine learning and 
+                communication systems.
+            </p>
+            <p>
                 I am actively seeking PhD positions for Fall 2026 admission.
             </p>
             <p>
@@ -118,9 +124,9 @@
                 <li>
                     <strong class="paper-title">"Balancing Information Accuracy and Response Timeliness in Networked LLMs"</strong><br>
                     Yigit Turkmen, Baturalp Buyukates, and Melih Bastopcu.<br>
-                    <em>Submitted to IEEE INFOCOM 2026.</em><br>
+                    <em>Submitted to IEEE INFOCOM 2026</em>.<br>
                     <a href="https://arxiv.org/abs/2508.02209" target="_blank">[arXiv:2508.02209]</a>
-                    </li>
+                </li>
             </ul>
         </section>
 
@@ -130,7 +136,8 @@
                 <li>
                     <strong>Undergraduate Researcher</strong> | Bilkent University<br>
                     Developed an analytical framework for a multi-agent LLM system to jointly optimize information 
-                    accuracy and response timeliness by determining the optimal number of LLMs to query.
+                    accuracy and response timeliness. Derived closed-form expressions for accuracy and built a 
+                    queueing-theoretic model to characterize timeliness.
                 </li>
                 <li>
                     <strong>Research Intern</strong> | Technical University of Munich (TUM)<br>
@@ -138,10 +145,26 @@
                     Gaussian Processes. Created and benchmarked an innovative Multilayer Perceptron (MLP) 
                     training technique for time series forecasting.
                 </li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Work & Industry Experience</h2>
+            <ul class="research">
                 <li>
                     <strong>Intern</strong> | ArdicLabs<br>
                     Engineered a real-time object detection system by training a custom YOLOH model, 
                     involving data annotation, performance analysis, and deployment on a Raspberry Pi 5.
+                </li>
+                <li>
+                    <strong>Intern</strong> | ASELSAN<br>
+                    Built an ADS-B receiver system from scratch for flight tracking. 
+                    Analyzed incoming ADS-B data and achieved a 27% improvement in the company's radar accuracy.
+                </li>
+                <li>
+                    <strong>Intern</strong> | DEICO Engineering<br>
+                    Designed a PCB (XR34350) using Altium Designer and implemented a UART serial communication 
+                    protocol using Vivado for the ZedBoard platform.
                 </li>
             </ul>
         </section>
