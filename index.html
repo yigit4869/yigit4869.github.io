@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - PhD Applicant</title>
+    <title>Yigit Turkmen - PhD Applicant</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -11,51 +11,83 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 20px;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f8f9fa; /* Lighter grey */
+            color: #212529; /* Darker text */
         }
         h1 {
-            color: #2c3e50; /* A nice dark blue/grey */
+            color: #2c3e50; 
+            font-size: 2.5em;
+            margin-bottom: 0;
         }
         h2 {
-            border-bottom: 2px solid #eee;
+            border-bottom: 2px solid #dee2e6; /* Lighter border */
             padding-bottom: 5px;
-            margin-top: 30px;
+            margin-top: 35px;
         }
         a {
-            color: #3498db; /* A clear blue for links */
+            color: #007bff; /* Standard blue link */
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
-        .pubs li {
-            margin-bottom: 10px;
+        /* Header & Nav */
+        header p {
+            font-size: 1.2em;
+            color: #495057;
+            margin-top: 5px;
         }
-        /* Simple navigation bar */
         nav {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 12px;
             font-weight: 500;
         }
+        
+        /* Publications & Research Lists */
+        .pubs li, .research li {
+            margin-bottom: 18px;
+        }
+        .pubs strong, .research strong {
+            font-size: 1.1em;
+            color: #343a40;
+        }
+        .pubs .paper-title {
+            font-style: italic;
+        }
+        
+        /* Coursework Columns */
+        .course-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        .course-list ul {
+            width: 48%;
+            padding-left: 20px;
+        }
+
     </style>
 </head>
 <body>
 
     <header>
         <center>
-            <h1>Your Name Here</h1>
-            <p>PhD Applicant | [Your Research Field, e.g., Machine Learning, Robotics]</p>
+            <h1>Yigit Turkmen</h1>
+            <p>PhD Applicant | Machine Learning & Signal Processing</p>
         </center>
         
         <nav>
             <a href="#about">About</a> |
+            <a href="#publications">Publications</a> |
             <a href="#research">Research</a> |
             <a href="#education">Education</a> |
-            <a href="your-cv-link.pdf">View CV (PDF)</a>
+            <a href="CV_Yigit_Turkmen.pdf" target="_blank">View CV (PDF)</a>
         </nav>
     </header>
 
@@ -63,34 +95,53 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Welcome to my personal page. I am a final-year undergraduate student at 
-                [Your University] studying [Your Major]. 
+                Welcome to my personal page. I am a final-year B.S. student in 
+                <strong>Electrical and Electronics Engineering</strong> at <strong>Bilkent University</strong>.
             </p>
             <p>
-                My research interests are in [Area 1], [Area 2], and [Area 3]. 
+                My research interests are in machine learning, reinforcement learning, and statistical signal processing,
+                particularly their application in networked systems and time-series analysis. 
                 I am actively seeking PhD positions for Fall 2026 admission.
-                (Add another sentence or two about your core motivation).
             </p>
             <p>
-                <a href="mailto:your-email@example.com">Email</a> | 
-                <a href="[your-google-scholar-link]">Google Scholar</a> | 
-                <a href="[your-linkedin-link]">LinkedIn</a> |
-                <a href="[your-github-profile-link]">GitHub</a>
+                <a href="mailto:yigit.turkmen@ug.bilkent.edu.tr">Email</a> | 
+                <a href="https://arxiv.org/abs/2508.02209" target="_blank">arXiv</a> | 
+                <a href="[your-linkedin-link]" target="_blank">LinkedIn</a> | 
+                <a href="[your-github-profile-link]" target="_blank">GitHub</a> |
+                <a href="[your-google-scholar-link]" target="_blank">Google Scholar</a>
             </p>
         </section>
 
-        <section id="research">
-            <h2>Research & Publications</h2>
+        <section id="publications">
+            <h2>Publications & Preprints</h2>
             <ul class="pubs">
                 <li>
-                    <strong>[Your Paper Title Here]</strong><br>
-                    Your Name, Co-Author Name, Supervisor Name.<br>
-                    <em>[Conference or Workshop Name, e.g., NeurIPS 2025 Workshop]</em>
+                    <strong class="paper-title">"Balancing Information Accuracy and Response Timeliness in Networked LLMs"</strong><br>
+                    Yigit Turkmen, Baturalp Buyukates, and Melih Bastopcu.<br>
+                    <em>Submitted to IEEE INFOCOM 2026.</em><br>
+                    <a href="https://arxiv.org/abs/2508.02209" target="_blank">[arXiv:2508.02209]</a>
                     </li>
+            </ul>
+        </section>
+
+        <section id="research">
+            <h2>Research Experience</h2>
+            <ul class="research">
                 <li>
-                    <strong>[Another Project or Paper]</strong><br>
-                    Your Name, Co-Author Name.<br>
-                    <em>[Details about the project or class]</em>
+                    <strong>Undergraduate Researcher</strong> | Bilkent University<br>
+                    Developed an analytical framework for a multi-agent LLM system to jointly optimize information 
+                    accuracy and response timeliness by determining the optimal number of LLMs to query.
+                </li>
+                <li>
+                    <strong>Research Intern</strong> | Technical University of Munich (TUM)<br>
+                    Developed an optimizer for Quantum Cascade Lasers (QCL) using Bayesian Optimization and 
+                    Gaussian Processes. Created and benchmarked an innovative Multilayer Perceptron (MLP) 
+                    training technique for time series forecasting.
+                </li>
+                <li>
+                    <strong>Intern</strong> | ArdicLabs<br>
+                    Engineered a real-time object detection system by training a custom YOLOH model, 
+                    involving data annotation, performance analysis, and deployment on a Raspberry Pi 5.
                 </li>
             </ul>
         </section>
@@ -98,11 +149,30 @@
         <section id="education">
             <h2>Education</h2>
             <p>
-                <strong>B.S. in [Your Major]</strong><br>
-                [Your University], [City, Country]<br>
-                Expected Graduation: [Month Year]<br>
-                CGPA: [Your GPA]
+                <strong>B.S. in Electrical & Electronics Engineering</strong><br>
+                Bilkent University, Ankara, Turkey<br>
+                Expected Graduation: Jan 2026<br>
+                CGPA: <strong>3.85 / 4.00</strong>
             </p>
+            
+            <h3>Relevant Coursework</h3>
+            <div class="course-list">
+                <ul>
+                    <li><strong>ML / AI & Stats</strong></li>
+                    <li>Reinforcement Learning (EEE 448)</li>
+                    <li>Statistical Learning (EEE 485)</li>
+                    <li>Statistical Foundations of NLP (EEE 486)</li>
+                    <li>Learning for Robotics (CS 449)</li>
+                    <li>Game Theory (ECON 439)</li>
+                </ul>
+                <ul>
+                    <li><strong>Foundational</strong></li>
+                    <li>Random Processes (EEE 533) <em>(In Progress)</em></li>
+                    <li>Signals and Systems (EEE 321)</li>
+                    <li>Probability and Statistics (MATH 255)</li>
+                    <li>Digital Communications (EEE 431)</li>
+                </ul>
+            </div>
         </section>
     </main>
 
