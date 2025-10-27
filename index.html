@@ -46,7 +46,7 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         nav a {
-            margin: 0 10px; /* Reduced margin for new link */
+            margin: 0 9px; /* Adjusted margin for new link */
             font-weight: 500;
         }
         
@@ -72,6 +72,22 @@
             padding-left: 20px;
         }
 
+        /* #### NEW STYLE FOR HOBBIES #### */
+        .hobbies-list {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .hobbies-list li {
+            background-color: #e9ecef; /* Light grey tag */
+            color: #495057;
+            padding: 5px 12px;
+            margin: 5px;
+            border-radius: 15px;
+            font-size: 0.95em;
+        }
+
     </style>
 </head>
 <body>
@@ -79,7 +95,7 @@
     <header>
         <center>
             <h1>Yigit Turkmen</h1>
-            <p>PhD Applicant</p>
+            <p>PhD Applicant | Mathematical Frameworks for ML & Networked Systems</p>
         </center>
         
         <nav>
@@ -88,6 +104,7 @@
             <a href="#research">Research</a> |
             <a href="#experience">Industry</a> |
             <a href="#education">Education</a> |
+            <a href="#hobbies">Hobbies</a> |
             <a href="CV_Yigit_Turkmen.pdf" target="_blank">View CV</a>
         </nav>
     </header>
@@ -99,7 +116,6 @@
                 Welcome to my personal page. I am a final-year B.S. student in 
                 <strong>Electrical and Electronics Engineering</strong> at <strong>Bilkent University</strong>.
             </p>
-            
             <p>
                 My research is focused on using **mathematics to understand complex systems** at a fundamental level. 
                 I am interested in developing **rigorous analytical frameworks**—using tools from optimization, 
@@ -197,6 +213,19 @@
                 </ul>
             </div>
         </section>
+
+        <section id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <ul class="hobbies-list">
+                <li>Trekking</li>
+                <li>Swimming</li>
+                <li>Heavy Lifting</li>
+                <li>Chess</li>
+                <li>Theatre</li>
+                <li>Cinema</li>
+            </ul>
+        </section>
+
     </main>
 
 </body>
