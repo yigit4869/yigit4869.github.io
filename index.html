@@ -11,8 +11,8 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 20px;
-            background-color: #f8f9fa; /* Lighter grey */
-            color: #212529; /* Darker text */
+            background-color: #f8f9fa;
+            color: #212529;
         }
         h1 {
             color: #2c3e50; 
@@ -20,12 +20,17 @@
             margin-bottom: 0;
         }
         h2 {
-            border-bottom: 2px solid #dee2e6; /* Lighter border */
+            border-bottom: 2px solid #dee2e6;
             padding-bottom: 5px;
             margin-top: 35px;
         }
+        h3 {
+            color: #495057;
+            margin-top: 25px;
+            font-size: 1.3em;
+        }
         a {
-            color: #007bff; /* Standard blue link */
+            color: #007bff;
             text-decoration: none;
         }
         a:hover {
@@ -46,15 +51,16 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         nav a {
-            margin: 0 9px; /* Adjusted margin for new link */
+            margin: 0 8px;
             font-weight: 500;
+            font-size: 0.95em;
         }
         
-        /* Publications & Research Lists */
-        .pubs li, .research li {
+        /* Lists */
+        .pubs li, .research li, .teaching li {
             margin-bottom: 18px;
         }
-        .pubs strong, .research strong {
+        .pubs strong, .research strong, .teaching strong {
             font-size: 1.1em;
             color: #343a40;
         }
@@ -62,32 +68,33 @@
             font-style: italic;
         }
         
-        /* Coursework Columns */
-        .course-list {
-            display: flex;
-            justify-content: space-between;
-        }
-        .course-list ul {
-            width: 48%;
-            padding-left: 20px;
-        }
-
-        /* #### NEW STYLE FOR HOBBIES #### */
-        .hobbies-list {
+        /* Tags for Skills/Hobbies */
+        .tags-list {
             list-style-type: none;
             padding-left: 0;
             display: flex;
             flex-wrap: wrap;
         }
-        .hobbies-list li {
-            background-color: #e9ecef; /* Light grey tag */
+        .tags-list li {
+            background-color: #e9ecef;
             color: #495057;
             padding: 5px 12px;
             margin: 5px;
             border-radius: 15px;
-            font-size: 0.95em;
+            font-size: 0.9em;
         }
 
+        /* Coursework Columns */
+        .course-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .course-list ul {
+            width: 45%;
+            min-width: 300px;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -95,16 +102,17 @@
     <header>
         <center>
             <h1>Yigit Turkmen</h1>
-            <p>PhD Applicant interested in Mathematical Frameworks for ML & Networked Systems</p>
+            <p>PhD Applicant interested in Learning Theory, Wireless Communication, and Probabilistic Inference</p>
         </center>
         
         <nav>
             <a href="#about">About</a> |
             <a href="#publications">Publications</a> |
             <a href="#research">Research</a> |
+            <a href="#teaching">Teaching</a> |
             <a href="#experience">Industry</a> |
             <a href="#education">Education</a> |
-            <a href="#hobbies">Hobbies</a> |
+            <a href="#skills">Skills</a> |
             <a href="CV_Yigit_Turkmen.pdf" target="_blank">View CV</a>
         </nav>
     </header>
@@ -117,10 +125,8 @@
                 <strong>Electrical and Electronics Engineering</strong> at <strong>Bilkent University</strong>.
             </p>
             <p>
-                My research is focused on using mathematics to understand complex systems at a fundamental level. 
-                I am interested in developing rigorous analytical frameworks using tools from optimization, 
-                probability to model, analyze, and design machine learning and 
-                communication systems.
+                My research focuses on the intersection of <strong>Learning Theory</strong>, <strong>Wireless Communication</strong>, and <strong>Probabilistic Inference</strong>. 
+                I am interested in developing rigorous analytical frameworks to model, analyze, and design machine learning and communication systems.
             </p>
             <p>
                 I am actively seeking PhD positions for Fall 2026 admission.
@@ -128,20 +134,33 @@
             <p>
                 <a href="mailto:yigit.turkmen@ug.bilkent.edu.tr">Email</a> | 
                 <a href="https://arxiv.org/abs/2508.02209" target="_blank">arXiv</a> | 
-                <a href="[your-linkedin-link]" target="_blank">LinkedIn</a> | 
-                <a href="[your-github-profile-link]" target="_blank">GitHub</a> |
-                <a href="[your-google-scholar-link]" target="_blank">Google Scholar</a>
+                <a href="https://linkedin.com/in/Yigit-Turkmen" target="_blank">LinkedIn</a> | 
+                <a href="[your-github-profile-link]" target="_blank">GitHub</a>
             </p>
         </section>
 
         <section id="publications">
-            <h2>Publications & Preprints</h2>
+            <h2>Publications</h2>
+            
+            <h3>Submitted</h3>
             <ul class="pubs">
                 <li>
                     <strong class="paper-title">"Balancing Information Accuracy and Response Timeliness in Networked LLMs"</strong><br>
-                    Yigit Turkmen, Baturalp Buyukates, and Melih Bastopcu.<br>
+                    Y. Turkmen, B. Buyukates, and M. Bastopcu.<br>
                     <em>Submitted to IEEE INFOCOM 2026</em>.<br>
                     <a href="https://arxiv.org/abs/2508.02209" target="_blank">[arXiv:2508.02209]</a>
+                </li>
+            </ul>
+
+            <h3>Research In Progress</h3>
+            <ul class="pubs">
+                <li>
+                    <strong class="paper-title">"Beyond Independence: A General Framework for Correlated LLM Aggregation"</strong><br>
+                    Y. Turkmen, B. Buyukates, and M. Bastopcu. (to be submitted).
+                </li>
+                <li>
+                    <strong class="paper-title">"From Homogeneous to Heterogeneous: Optimizing Trade-offs in Networked LLMs"</strong><br>
+                    Y. Turkmen, B. Buyukates, and M. Bastopcu. (to be submitted).
                 </li>
             </ul>
         </section>
@@ -150,37 +169,43 @@
             <h2>Research Experience</h2>
             <ul class="research">
                 <li>
-                    <strong>Undergraduate Researcher</strong> | Bilkent University<br>
-                    Developed an analytical framework for a multi-agent LLM system to jointly optimize information 
-                    accuracy and response timeliness. Derived closed-form expressions for accuracy and built a 
-                    queueing-theoretic model to characterize timeliness.
+                    <strong>Undergraduate Researcher</strong> | Bilkent University & University of Birmingham<br>
+                    <em>Supervisors: Prof. Melih Bastopcu, Prof. Baturalp Buyukates (Jan 2025 – Present)</em><br>
+                    Developing an analytical framework using queueing theory and MAP estimation to balance the trade-off between information accuracy and response timeliness. Designing optimal aggregation rules for correlated and heterogeneous agents, leveraging online learning to maximize system reliability.
                 </li>
                 <li>
                     <strong>Research Intern</strong> | Technical University of Munich (TUM)<br>
-                    Developed an optimizer for Quantum Cascade Lasers (QCL) using Bayesian Optimization and 
-                    Gaussian Processes. Created and benchmarked an innovative Multilayer Perceptron (MLP) 
-                    training technique for time series forecasting.
+                    <em>Supervisors: Prof. Christian Jirauschek, Dr. Ozum Asirim (July 2024 – Sept 2024)</em><br>
+                    Developed an optimizer for Quantum Cascade Lasers (QCL) using Bayesian Optimization and Gaussian Processes. Created an innovative Multilayer Perceptron (MLP) training technique for time series forecasting, benchmarking it against state-of-the-art methods.
+                </li>
+            </ul>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching Experience</h2>
+            <ul class="teaching">
+                <li>
+                    <strong>Teaching Assistant, MATH102 - Calculus II</strong> | Bilkent University<br>
+                    <em>September 2023 – December 2023</em><br>
+                    Responsible for grading quizzes for a cohort of 304 students.
                 </li>
             </ul>
         </section>
 
         <section id="experience">
-            <h2>Work & Industry Experience</h2>
+            <h2>Work Experience</h2>
             <ul class="research">
                 <li>
-                    <strong>Intern</strong> | ArdicLabs<br>
-                    Engineered a real-time object detection system by training a custom YOLOH model, 
-                    involving data annotation, performance analysis, and deployment on a Raspberry Pi 5.
+                    <strong>Engineering Intern</strong> | ArdicLabs (June 2025 – July 2025)<br>
+                    Built a real-time object detection system by training a custom YOLO11 model, including deployment on Raspberry Pi 5. Developed an elevator analysis tool to measure vibration and motion in compliance with ISO standards.
                 </li>
                 <li>
-                    <strong>Intern</strong> | ASELSAN<br>
-                    Built an ADS-B receiver system from scratch for flight tracking. 
-                    Analyzed incoming ADS-B data and achieved a 27% improvement in the company's radar accuracy.
+                    <strong>Engineering Intern</strong> | ASELSAN (June 2024 – July 2024)<br>
+                    Built an ADS-B receiver system for flight tracking. Analyzed incoming ADS-B data and achieved a 27% improvement in radar accuracy.
                 </li>
                 <li>
-                    <strong>Intern</strong> | DEICO Engineering<br>
-                    Designed a PCB (XR34350) using Altium Designer and implemented a UART serial communication 
-                    protocol using Vivado for the ZedBoard platform.
+                    <strong>Engineering Intern</strong> | DEICO Engineering (June 2023 – July 2023)<br>
+                    Designed a PCB (XR34350) using Altium Designer and implemented a UART serial communication protocol using Vivado for the ZedBoard platform.
                 </li>
             </ul>
         </section>
@@ -188,41 +213,65 @@
         <section id="education">
             <h2>Education</h2>
             <p>
-                <strong>B.S. in Electrical & Electronics Engineering</strong><br>
+                <strong>B.S. in Electrical and Electronics Engineering</strong><br>
                 Bilkent University, Ankara, Turkey<br>
-                Graduation: June 2026<br>
-                CGPA: <strong>3.85 / 4.00</strong>
+                <em>September 2021 – June 2026 (Expected)</em><br>
+                CGPA: <strong>3.85 / 4.00</strong> (High Honor)
+            </p>
+            <p>
+                <strong>B.S. in Physics (Second Major)</strong><br>
+                Bilkent University, Ankara, Turkey<br>
+                <em>January 2023 – September 2025</em> (Drop-out)<br>
+                CGPA: <strong>3.86 / 4.00</strong>
             </p>
             
             <h3>Relevant Coursework</h3>
             <div class="course-list">
                 <ul>
-                    <li><strong>ML / AI & Stats</strong></li>
-                    <li>Reinforcement Learning (EEE 448)</li>
-                    <li>Statistical Learning (EEE 485)</li>
-                    <li>Statistical Foundations of NLP (EEE 486)</li>
-                    <li>Learning for Robotics (CS 449)</li>
-                    <li>Game Theory (ECON 439)</li>
+                    <li><strong>ML & Theory</strong></li>
+                    <li>Reinforcement Learning</li>
+                    <li>Statistical Learning</li>
+                    <li>Statistical Foundations of NLP</li>
+                    <li>Learning for Robotics</li>
+                    <li>Game Theory</li>
                 </ul>
                 <ul>
                     <li><strong>Foundational</strong></li>
-                    <li>Random Processes (EEE 533) <em>(In Progress)</em></li>
-                    <li>Signals and Systems (EEE 321)</li>
-                    <li>Probability and Statistics (MATH 255)</li>
-                    <li>Digital Communications (EEE 431)</li>
+                    <li>Random Processes (In Progress)</li>
+                    <li>Signals and Systems</li>
+                    <li>Probability and Statistics</li>
+                    <li>Digital Communications</li>
                 </ul>
             </div>
         </section>
 
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="tags-list">
+                <li>Python</li>
+                <li>MATLAB</li>
+                <li>PyTorch</li>
+                <li>Huggingface/Transformers</li>
+                <li>Embedded C</li>
+                <li>VHDL</li>
+                <li>8051 Assembly</li>
+                <li>LaTeX</li>
+                <li>OpenRouter</li>
+            </ul>
+        </section>
+
         <section id="hobbies">
             <h2>Hobbies & Interests</h2>
-            <ul class="hobbies-list">
-                <li>Trekking</li>
+            <ul class="tags-list">
+                <li>Chess (High School Team)</li>
+                <li>Classical Violin</li>
+                <li>Basketball</li>
                 <li>Swimming</li>
-                <li>Heavy Lifting</li>
-                <li>Chess</li>
-                <li>Theatre</li>
-                <li>Cinema</li>
+                <li>Cycling</li>
+                <li>Hiking</li>
+                <li>Trekking</li>
+                <li>Bodybuilding</li>
+                <li>Football</li>
             </ul>
         </section>
 
